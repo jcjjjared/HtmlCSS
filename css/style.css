@@ -1,0 +1,121 @@
+.Logout-text {
+    font-size: 1vw;
+    text-align:center;
+}
+
+.category-icon {
+    height:40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.category-text {
+    text-align:center;
+}
+
+.categories-drop-down {
+    margin-left: 60px;
+}
+
+.item-showcase{
+    float: left;
+    height: 200px;
+    width:inherit;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.user-showcase{
+    float: left;
+    height: 200px;
+    width:inherit;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.itemcardbicycle, .itemcardphone, .itemcardcar, .itemcardfan, .itemcardps4, .itemcardcups {
+    width: 18%;
+    height: 90%;
+    border: 3px solid dimgray;
+    border-radius:5px;
+    display:inline-block;
+    float:inherit;
+    margin:1%;
+    overflow:hidden;
+    position:relative;
+}
+
+.usercard5star, .usercard45star, .usercard4star {
+    width: 18%;
+    height: 90%;
+    border: 3px solid dimgray;
+    border-radius:5px;
+    display:inline-block;
+    float:inherit;
+    padding:10px;
+    margin:1%;
+}
+
+.left-button {
+    width:40px;
+    height:40px;
+    position:absolute;
+    top:80px;
+}
+
+.right-button {
+    width:40px;
+    height:40px;
+    position:absolute;
+    top:80px;
+    right:0px;
+}
+
+.imagePreview {
+    border-radius:20px;
+    border:3px solid grey;
+    height:350px;
+    width:350px;
+
+    background-position: center center;
+    background-color:#fff;
+    background-size: cover;
+    background-repeat:no-repeat;
+    display: inline-block;
+
+}
+
+.item-card-username {
+    margin-top:10px;
+    margin-left:10px;
+}
+
+.item-card-description {
+    bottom:0px;
+    left:10px;
+    color:whitesmoke;
+    font-weight: 500;
+    position:absolute;
+}
+
+
+.item-card-image {
+    position:relative;
+    display:inline-block;
+}
+
+.imgAdd {
+  width:30px;
+  height:30px;
+  border-radius:50%;
+  background-color:#4bd7ef;
+  color:#fff;
+  box-shadow:0px 0px 2px 1px rgba(0,0,0,0.2);
+  text-align:center;
+  line-height:30px;
+  margin-top:0px;
+  cursor:pointer;
+  font-size:15px;
+}
+

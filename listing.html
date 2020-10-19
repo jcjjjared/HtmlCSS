@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Listing</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <style>
+            .carousel-control-prev-icon {
+                background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+                position:absolute;
+                z-index:1;
+                left:5px;
+            }
+
+            .carousel-control-next-icon {
+                background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+                position:absolute;
+                z-index:1;
+                right:5px;
+            }
+        </style>
+        <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta content="utf-8" http-equiv="encoding">
+    </head>
+    <body>
+        <div class="container">
+            <div id="nav-placeholder">
+                <nav class="navbar navbar-expand-lg navbar-light" style="align-content: bottom;">
+                    <div>
+                        <a class="nav-brand" href='home.html'>
+                            <img height="80" src="img/Carousell.png" alt="Responsive image">
+                        </a>
+                    </div>
+                    <div class="categories col-md-10">
+                        <ul class="nav justify-content-center">
+                            <li class="nav-item">
+                                <a class="nav-link categories" href="#">
+                                    <img class="img-fluid category-icon" src="img/Cars.jpg" alt="Responsive image"><p class="category-text">Cars</p></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link categories" href="#">
+                                    <img class="img-fluid category-icon" src="img/Property.JPG" alt="Responsive image"><p class="category-text">Property</p></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link categories" href="#">
+                                    <img class="img-fluid category-icon" src="img/Mens.JPG" alt="Responsive image"><p class="category-text">Mens</p></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link categories" href="#">
+                                    <img class="img-fluid category-icon" src="img/Womens.JPG" alt="Responsive image"><p class="category-text">Womens</p></a>
+                            </li>
+                            <li class="nav-item center-icon">
+                                <a class="nav-link categories" href="#">
+                                    <img class="img-fluid category-icon" src="img/Electronics.JPG" alt="Responsive image"><p class="category-text">Electronics</p></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link categories" href="#">
+                                    <img class="img-fluid category-icon" src="img/Sports.JPG" alt="Responsive image"><p class="category-text">Sports</p></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link categories" href="#">
+                                    <img class="img-fluid category-icon" src="img/Toys.JPG" alt="Responsive image"><p class="category-text">Toys</p></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link categories" href="#">
+                                    <img class="category-icon" src="img/Healthcare.JPG" alt="Responsive image"><p class="category-text">Healthcare</p></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link categories" href="#">
+                                    <img class="category-icon" src="img/Pets.JPG" alt="Responsive image"><p class="category-text">Pets</p></a>
+                            </li>
+                            <li>
+                                <a class="nav-link categories" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                    <img src=img/More.JPG style="height:30px;">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <div class="row">
+                            <a  href="#">
+                                <img class="logout-button img-resonsive" src="img/Logout.JPG" alt="Responsive image" height="50" style="right:0px;">
+                            </a>
+                        </div>
+                        <div class="row">
+                            <p class="Logout-text">Logout
+                            </p>
+                        </div>
+                        <div class="row">
+                            <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src=img/User.JPG style="height:15px;">
+                                Username
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">Settings</a>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </nav>
+                <div class="collapse categories-drop-down col-md-10" id="collapseExample">
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link categories" href="#">
+                                <img class="img-fluid category-icon" src="img/Books.JPG" alt="Responsive image"><p class="category-text">Books</p></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link categories" href="#">
+                                <img class="img-fluid category-icon" src="img/Art.JPG" alt="Responsive image"><p class="category-text">Art</p></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link categories" href="#">
+                                <img class="img-fluid category-icon" src="img/Hats.JPG" alt="Responsive image"><p class="category-text">Hats</p></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link categories" href="#">
+                                <img class="img-fluid category-icon" src="img/Shoes.JPG" alt="Responsive image"><p class="category-text">Shoes</p></a>
+                        </li>
+                        <li class="nav-item center-icon">
+                            <a class="nav-link categories" href="#">
+                                <img class="img-fluid category-icon" src="img/Jewellery.JPG" alt="Responsive image"><p class="category-text">Jewellery</p></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link categories" href="#">
+                                <img class="img-fluid category-icon" src="img/Watches.JPG" alt="Responsive image"><p class="category-text">Watches</p></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link categories" href="#">
+                                <img class="img-fluid category-icon" src="img/Coupons.JPG" alt="Responsive image"><p class="category-text">Coupons</p></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link categories" href="#">
+                                <img class="category-icon" src="img/Pets.JPG" alt="Responsive image"><p class="category-text">Pets</p></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link categories" href="#">
+                                <img class="category-icon" src="img/Phones.JPG" alt="Responsive image"><p class="category-text">Phones</p></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link categories" href="#">
+                                <img class="category-icon" src="img/Fans.JPG" alt="Responsive image"><p class="category-text">Fans</p></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <nav class="navbar navbar-light bg-light">
+                    <form class="form-inline">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                            <div class="input-group-postpend">
+                                <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Go</button>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="navbar-elements">
+                        <a class="btn btn-sm btn-outline-success mr-3" role="button" href="sell.html">
+                            Sell
+                        </a>
+                        <div class="btn-group" role="group" style="z-index:999;">
+                            <a href="about.html" class="btn btn-sm btn-info" type="button">About</a>
+                            <button class="btn btn-sm btn-outline-secondary" type="button">Help</button>
+                            <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Language                       
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">Bahasa Melayu</a>
+                                    <a class="dropdown-item" href="#">தமிழ்</a>
+                                    <a class="dropdown-item" href="#">中文</a>
+                                    <a class="dropdown-item" href="#">française</a>
+                                    <a class="dropdown-item" href="#">日本語</a>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="row mt-2">
+                <div class="col col-md-1">
+                </div>
+                <div class="col col-md-1">
+                    <div class="row mr-1" id ="image-box1" style="height:95px;width:95px; border:2px solid grey; border-radius:5px;">
+                        <img src=img/powerbank1.jpg style="height:100%;width:100%;cursor:pointer">
+                    </div>
+                    <div class="row mr-1 mt-1 image-box" id ="image-box2" style="height:95px;width:95px; border:2px solid grey; border-radius:5px;">
+                        <img src=img/powerbank2.jpg style="height:100%;width:100%;cursor:pointer">
+                    </div>
+                    <div class="row mr-1 mt-1 image-box" id ="image-box3" style="height:95px;width:95px; border:2px solid grey; border-radius:5px;">
+                        <img src=img/powerbank3.jpg style="height:100%;width:100%;cursor:pointer">
+                    </div>
+                </div>
+                <div class="col col-md-3 ml-1" style="height:300px;border:2px solid grey; border-radius:5px;" id="image-viewer">
+                    <img src=img/powerbank1.jpg style="height:100%;width:100%;">
+                </div>
+                <div class="col col-md-6">
+                    <h3 style="margin-bottom:10px;">
+                        Philips 1000mAh Power Bank
+                    </h3>
+                    <h4 style="margin-bottom:10px;display:inline-block">
+                        Portable Charger
+                    </h4>
+                    <h4 style="margin-bottom:10px;display:inline-block;margin-left:120px;">
+                        $40 
+                    </h4>
+                    <h4 style="margin-bottom:10px;">
+                        Philips Brand
+                    </h4>
+                    <h5 style="margin-bottom:10px;">
+                        Brand New
+                    </h5>
+                    <h5 style="margin-bottom:10px;">
+                        Meet-up
+                    </h5>
+                    <h6 style="margin-bottom:10px;">
+                        <img src=img/location.JPG style="height:30px;">
+                        City Hall
+                    </h6>
+                    <h5 style="margin-bottom:10px;">
+                        Payment
+                    </h5>
+                    <img src=img/Visa.JPG style="height:40px;">
+                    <img src=img/mastercard.JPG style="height:40px;">
+                    <img src=img/AmericanExpress.JPG style="height:40px;">
+                    <img src=img/GooglePay.JPG style="height:40px;">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-1">
+                </div>
+                <div class="col-md-10">
+                    <h4>Description</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>  
+
+            </div>
+        </div>
+
+        <!-- JavaScript placed at the end of the document so the pages load faster -->
+        <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script>
+            $( "#image-box1" ).click(function() {
+                $('#image-viewer').empty();
+                $('#image-viewer').append("<img src='img/powerbank1.jpg' style='height:100%;width:100%;'/>");
+            });
+            $( "#image-box2" ).click(function() {
+                $('#image-viewer').empty();
+                $('#image-viewer').append("<img src='img/powerbank2.jpg' style='height:100%;width:100%;'/>");
+            });
+            $( "#image-box3" ).click(function() {
+                $('#image-viewer').empty();
+                $('#image-viewer').append("<img src='img/powerbank3.jpg' style='height:100%;width:100%;'/>");
+            });
+        </script>
+    </body>
+</html>

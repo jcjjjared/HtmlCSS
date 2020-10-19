@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Carousell Home</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <style>
+            .carousel-control-prev-icon {
+                background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+                position:absolute;
+                z-index:1;
+                left:5px;
+            }
+
+            .carousel-control-next-icon {
+                background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+                position:absolute;
+                z-index:1;
+                right:5px;
+            }
+        </style>
+        <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta content="utf-8" http-equiv="encoding">
+    </head>
+    <body>
+        <div class="container">
+            <div id="nav-placeholder">
+                <nav class="navbar navbar-expand-lg navbar-light" style="align-content: bottom;">
+                    <div>
+                        <a class="nav-brand" href='home.html'>
+                            <img height="80" src="img/Carousell.png" alt="Responsive image">
+                        </a>
+                    </div>
+                    <div class="categories col-md-10">
+                        <ul class="nav justify-content-center">
+                            <li class="nav-item">
+                                <a class="nav-link categories" href="#">
+                                    <img class="img-fluid category-icon" src="img/Cars.jpg" alt="Responsive image"><p class="category-text">Cars</p></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link categories" href="#">
+                                    <img class="img-fluid category-icon" src="img/Property.JPG" alt="Responsive image"><p class="category-text">Property</p></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link categories" href="#">
+                                    <img class="img-fluid category-icon" src="img/Mens.JPG" alt="Responsive image"><p class="category-text">Mens</p></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link categories" href="#">
+                                    <img class="img-fluid category-icon" src="img/Womens.JPG" alt="Responsive image"><p class="category-text">Womens</p></a>
+                            </li>
+                            <li class="nav-item center-icon">
+                                <a class="nav-link categories" href="#">
+                                    <img class="img-fluid category-icon" src="img/Electronics.JPG" alt="Responsive image"><p class="category-text">Electronics</p></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link categories" href="#">
+                                    <img class="img-fluid category-icon" src="img/Sports.JPG" alt="Responsive image"><p class="category-text">Sports</p></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link categories" href="#">
+                                    <img class="img-fluid category-icon" src="img/Toys.JPG" alt="Responsive image"><p class="category-text">Toys</p></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link categories" href="#">
+                                    <img class="category-icon" src="img/Healthcare.JPG" alt="Responsive image"><p class="category-text">Healthcare</p></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link categories" href="#">
+                                    <img class="category-icon" src="img/Pets.JPG" alt="Responsive image"><p class="category-text">Pets</p></a>
+                            </li>
+                            <li>
+                                <a class="nav-link categories" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                    <img src=img/More.JPG style="height:30px;">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <div class="row">
+                            <a  href="#">
+                                <img class="logout-button img-resonsive" src="img/Logout.JPG" alt="Responsive image" height="50" style="right:0px;">
+                            </a>
+                        </div>
+                        <div class="row">
+                            <p class="Logout-text">Logout
+                            </p>
+                        </div>
+                        <div class="row">
+                            <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src=img/User.JPG style="height:15px;">
+                                Username
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">Settings</a>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </nav>
+                <div class="collapse categories-drop-down col-md-10" id="collapseExample">
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link categories" href="#">
+                                <img class="img-fluid category-icon" src="img/Books.JPG" alt="Responsive image"><p class="category-text">Books</p></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link categories" href="#">
+                                <img class="img-fluid category-icon" src="img/Art.JPG" alt="Responsive image"><p class="category-text">Art</p></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link categories" href="#">
+                                <img class="img-fluid category-icon" src="img/Hats.JPG" alt="Responsive image"><p class="category-text">Hats</p></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link categories" href="#">
+                                <img class="img-fluid category-icon" src="img/Shoes.JPG" alt="Responsive image"><p class="category-text">Shoes</p></a>
+                        </li>
+                        <li class="nav-item center-icon">
+                            <a class="nav-link categories" href="#">
+                                <img class="img-fluid category-icon" src="img/Jewellery.JPG" alt="Responsive image"><p class="category-text">Jewellery</p></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link categories" href="#">
+                                <img class="img-fluid category-icon" src="img/Watches.JPG" alt="Responsive image"><p class="category-text">Watches</p></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link categories" href="#">
+                                <img class="img-fluid category-icon" src="img/Coupons.JPG" alt="Responsive image"><p class="category-text">Coupons</p></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link categories" href="#">
+                                <img class="category-icon" src="img/Pets.JPG" alt="Responsive image"><p class="category-text">Pets</p></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link categories" href="#">
+                                <img class="category-icon" src="img/Phones.JPG" alt="Responsive image"><p class="category-text">Phones</p></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link categories" href="#">
+                                <img class="category-icon" src="img/Fans.JPG" alt="Responsive image"><p class="category-text">Fans</p></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <nav class="navbar navbar-light bg-light">
+                    <form class="form-inline">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                            <div class="input-group-postpend">
+                                <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Go</button>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="navbar-elements">
+                        <a class="btn btn-sm btn-outline-success mr-3" role="button" href="sell.html">
+                            Sell
+                        </a>
+                        <div class="btn-group" role="group" style="z-index:999;">
+                            <a href="about.html" class="btn btn-sm btn-info" type="button">About</a>
+                            <button class="btn btn-sm btn-outline-secondary" type="button">Help</button>
+                            <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Language                       
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">Bahasa Melayu</a>
+                                    <a class="dropdown-item" href="#">தமிழ்</a>
+                                    <a class="dropdown-item" href="#">中文</a>
+                                    <a class="dropdown-item" href="#">française</a>
+                                    <a class="dropdown-item" href="#">日本語</a>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </nav>
+
+            </div>
+
+            <div id="carouselPopularItems" class="carousel slide" data-wrap="false" data-interval="false" style="margin-top:20px;">
+                <h3>Popular Items</h3>
+                <div class="carousel-inner" style="border:3px solid black;">
+                    <div class="carousel-item active">
+                        <div class="item-showcase">
+                            <div class="itemcardbicycle">
+                                <div class="item-card-username"><h5><img src=img/user2.jpg style="height:20px;">orEDpoSEdi</h5></div>
+                                <img src=img/UsedBike.jpg style="width:100%; display: block; margin:auto;">
+                                <div class="item-card-description">
+                                    <p style="margin:0">Bike</p>
+                                    <p>$50 Used</p>
+                                </div>
+                            </div>
+                            <div class="itemcardcar">
+                                <div class="item-card-username"><h5><img src=img/user2.jpg style="height:20px;">cUlbeINKeM</h5></div>
+                                <img src=img/UsedCar.jpg style="width:100%; display: block; margin:auto;">
+                                <div class="item-card-description">
+                                    <p style="margin:0">Car</p>
+                                    <p>$10000 Used</p>
+                                </div> 
+                            </div>
+                            <div class="itemcardcups">
+                                <div class="item-card-username"><h5><img src=img/user2.jpg style="height:20px;">EniNalDEat</h5></div>
+                                <img src=img/UsedCups.jpg style="width:100%; display: block; margin:auto;">
+                                <div class="item-card-description">
+                                    <p style="margin:0">Cups</p>
+                                    <p>$5 Used</p>
+                                </div>
+                            </div>
+                            <div class="itemcardfan">
+                                <div class="item-card-username"><h5><img src=img/user2.jpg style="height:20px;">EGRAraTi</h5></div>
+                                <img src=img/UsedFan.jpg style="width:100%; display: block; margin:auto;">
+                                <div class="item-card-description">
+                                    <p style="margin:0">Bike</p>
+                                    <p>$20 Used</p>
+                                </div>
+                            </div>
+                            <div class="itemcardphone">
+                                <div class="item-card-username"><h5><img src=img/user2.jpg style="height:20px;">iREnTranautH</h5></div>
+                                <img src=img/UsedPhone.jpg style="width:100%; display: block; margin:auto;">
+                                <div class="item-card-description">
+                                    <p style="margin:0">Phone</p>
+                                    <p>$400 Used</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="item-showcase">
+                            <div class="itemcardcups">
+                                <div class="item-card-username"><h5><img src=img/user2.jpg style="height:20px;">EniNalDEat</h5></div>
+                                <img src=img/UsedCups.jpg style="width:100%; display: block; margin:auto;">
+                                <div class="item-card-description">
+                                    <p style="margin:0">Cups</p>
+                                    <p>$5 Used</p>
+                                </div>
+                            </div>
+                            <div class="itemcardfan">
+                                <div class="item-card-username"><h5><img src=img/user2.jpg style="height:20px;">EGRAraTi</h5></div>
+                                <img src=img/UsedFan.jpg style="width:100%; display: block; margin:auto;">
+                                <div class="item-card-description">
+                                    <p style="margin:0">Bike</p>
+                                    <p>$20 Used</p>
+                                </div>
+                            </div>
+                            <div class="itemcardbicycle">
+                                <div class="item-card-username"><h5><img src=img/user2.jpg style="height:20px;">orEDpoSEdi</h5></div>
+                                <img src=img/UsedBike.jpg style="width:100%; display: block; margin:auto;">
+                                <div class="item-card-description">
+                                    <p style="margin:0">Bike</p>
+                                    <p>$50 Used</p>
+                                </div>
+                            </div>
+                            <div class="itemcardcar">
+                                <div class="item-card-username"><h5><img src=img/user2.jpg style="height:20px;">cUlbeINKeM</h5></div>
+                                <img src=img/UsedCar.jpg style="width:100%; display: block; margin:auto;">
+                                <div class="item-card-description">
+                                    <p style="margin:0">Car</p>
+                                    <p>$10000 Used</p>
+                                </div> 
+                            </div>
+                            <div class="itemcardphone">
+                                <div class="item-card-username"><h5><img src=img/user2.jpg style="height:20px;">iREnTranautH</h5></div>
+                                <img src=img/UsedPhone.jpg style="width:100%; display: block; margin:auto;">
+                                <div class="item-card-description">
+                                    <p style="margin:0">Phone</p>
+                                    <p>$400 Used</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="item-showcase">
+                            <div class="itemcardfan">
+                                <div class="item-card-username"><h5><img src=img/user2.jpg style="height:20px;">EGRAraTi</h5></div>
+                                <img src=img/UsedFan.jpg style="width:100%; display: block; margin:auto;">
+                                <div class="item-card-description">
+                                    <p style="margin:0">Bike</p>
+                                    <p>$20 Used</p>
+                                </div>
+                            </div>
+                            <div class="itemcardbicycle">
+                                <div class="item-card-username"><h5><img src=img/user2.jpg style="height:20px;">orEDpoSEdi</h5></div>
+                                <img src=img/UsedBike.jpg style="width:100%; display: block; margin:auto;">
+                                <div class="item-card-description">
+                                    <p style="margin:0">Bike</p>
+                                    <p>$50 Used</p>
+                                </div>
+                            </div>
+                            <div class="itemcardps4">
+                                <div class="item-card-username"><h5><img src=img/user2.jpg style="height:20px;">AlentAB</h5></div>
+                                <img src=img/Usedps4.jpg style="width:100%; display: block; margin:auto;">
+                                <div class="item-card-description">
+                                    <p style="margin:0">ps4</p>
+                                    <p>$300 Used</p>
+                                </div>
+                            </div>
+                            <div class="itemcardcar">
+                                <div class="item-card-username"><h5><img src=img/user2.jpg style="height:20px;">cUlbeINKeM</h5></div>
+                                <img src=img/UsedCar.jpg style="width:100%; display: block; margin:auto;">
+                                <div class="item-card-description">
+                                    <p style="margin:0">Car</p>
+                                    <p>$10000 Used</p>
+                                </div> 
+                            </div>
+                            <div class="itemcardphone">
+                                <div class="item-card-username"><h5><img src=img/user2.jpg style="height:20px;">iREnTranautH</h5></div>
+                                <img src=img/UsedPhone.jpg style="width:100%; display: block; margin:auto;">
+                                <div class="item-card-description">
+                                    <p style="margin:0">Phone</p>
+                                    <p>$400 Used</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselPopularItems" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselPopularItems" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <div id="carouselTrendingUsers" class="carousel slide" data-wrap="false" data-interval="false" style="margin-top:20px">
+                <h3>Trending Users</h3>
+                <div class="carousel-inner" style="border:3px solid black;">
+                    <div class="carousel-item active">
+                        <div class="user-showcase">
+                            <div class="usercard5star">
+                                <h5>
+                                    <img src=img/user2.jpg style="height:20px;">uNSPICA</h5>
+                                <h6 style="margin-top:20px;">23 Listings</h6><h6>Electronics, Music</h6>
+                                <div class="rating" style="margin-top:20px;">
+                                    <img src=img/StarJPG.JPG style="height:20px;">
+                                    <img src=img/StarJPG.JPG style="height:20px;">
+                                    <img src=img/StarJPG.JPG style="height:20px;">
+                                    <img src=img/StarJPG.JPG style="height:20px;">
+                                    <img src=img/StarJPG.JPG style="height:20px;">
+                                </div>
+                            </div>
+                            <div class="usercard5star">
+                                <h5>
+                                    <img src=img/user2.jpg style="height:20px;">Bobby</h5>
+                                <h6 style="margin-top:20px;">100 Listings</h6><h6>Clothing</h6>
+                                <div class="rating" style="margin-top:20px;">
+                                    <img src=img/StarJPG.JPG style="height:20px;">
+                                    <img src=img/StarJPG.JPG style="height:20px;">
+                                    <img src=img/StarJPG.JPG style="height:20px;">
+                                    <img src=img/StarJPG.JPG style="height:20px;">
+                                    <img src=img/StarJPG.JPG style="height:20px;">
+                                </div>
+                            </div>
+                            <div class="usercard5star">
+                                <h5>
+                                    <img src=img/user2.jpg style="height:20px;">tom123</h5>
+                                <h6 style="margin-top:20px;">58 Listings</h6><h6>Music</h6>
+                                <div class="rating" style="margin-top:20px;">
+                                    <img src=img/StarJPG.JPG style="height:20px;">
+                                    <img src=img/StarJPG.JPG style="height:20px;">
+                                    <img src=img/StarJPG.JPG style="height:20px;">
+                                    <img src=img/StarJPG.JPG style="height:20px;">
+                                    <img src=img/StarJPG.JPG style="height:20px;">
+                                </div>
+                            </div>
+                            <div class="usercard5star">
+                                <h5>
+                                    <img src=img/user2.jpg style="height:20px;">abcefg29</h5>
+                                <h6 style="margin-top:20px;">90 Listings</h6><h6>Electronics</h6>
+                                <div class="rating" style="margin-top:20px;">
+                                    <img src=img/StarJPG.JPG style="height:20px;">
+                                    <img src=img/StarJPG.JPG style="height:20px;">
+                                    <img src=img/StarJPG.JPG style="height:20px;">
+                                    <img src=img/StarJPG.JPG style="height:20px;">
+                                    <img src=img/StarJPG.JPG style="height:20px;">
+                                </div>
+                            </div>
+                            <div class="usercard45star">
+                                <h5>
+                                    <img src=img/user2.jpg style="height:20px;">Sally12</h5>
+                                <h6 style="margin-top:20px;">82 Listings</h6><h6>Sports, Healthcare</h6>
+                                <div class="rating" style="margin-top:20px;">
+                                    <img src=img/StarJPG.JPG style="height:20px;">
+                                    <img src=img/StarJPG.JPG style="height:20px;">
+                                    <img src=img/StarJPG.JPG style="height:20px;">
+                                    <img src=img/StarJPG.JPG style="height:20px;">
+                                    <img src=img/halfstar.JPG style="height:20px;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="user-showcase">
+                            <div class="usercard45star">
+                                <h5>
+                                    <img src=img/user2.jpg style="height:20px;">user999</h5>
+                                <h6 style="margin-top:20px;">31 Listings</h6><h6>Pets</h6>
+                                <div class="rating" style="margin-top:20px;">
+                                    <img src=img/StarJPG.JPG style="height:20px;">
+                                    <img src=img/StarJPG.JPG style="height:20px;">
+                                    <img src=img/StarJPG.JPG style="height:20px;">
+                                    <img src=img/StarJPG.JPG style="height:20px;">
+                                    <img src=img/halfstar.JPG style="height:20px;">
+                                </div>
+                            </div>
+                            <div class="usercard45star">
+                                <h5>
+                                    <img src=img/user2.jpg style="height:20px;">user12312</h5>
+                                <h6 style="margin-top:20px;">23 Listings</h6><h6>Electronics, Music</h6>
+                                <div class="rating" style="margin-top:20px;">
+                                    <img src=img/StarJPG.JPG style="height:20px;">
+                                    <img src=img/StarJPG.JPG style="height:20px;">
+                                    <img src=img/StarJPG.JPG style="height:20px;">
+                                    <img src=img/StarJPG.JPG style="height:20px;">
+                                    <img src=img/halfstar.JPG style="height:20px;">
+                                </div>
+                            </div>
+                            <div class="usercard45star">
+                                <h5>
+                                    <img src=img/user2.jpg style="height:20px;">Username</h5>
+                                <h6 style="margin-top:20px;">123 Listings</h6><h6>Toys, Mens, Cars</h6>
+                                <div class="rating" style="margin-top:20px;">
+                                    <img src=img/StarJPG.JPG style="height:20px;">
+                                    <img src=img/StarJPG.JPG style="height:20px;">
+                                    <img src=img/StarJPG.JPG style="height:20px;">
+                                    <img src=img/StarJPG.JPG style="height:20px;">
+                                    <img src=img/halfstar.JPG style="height:20px;">
+                                </div>
+                            </div>
+                            <div class="usercard45star">
+                                <h5>
+                                    <img src=img/user2.jpg style="height:20px;">Jakey</h5>
+                                <h6 style="margin-top:20px;">22 Listings</h6><h6>Electronics</h6>
+                                <div class="rating" style="margin-top:20px;">
+                                    <img src=img/StarJPG.JPG style="height:20px;">
+                                    <img src=img/StarJPG.JPG style="height:20px;">
+                                    <img src=img/StarJPG.JPG style="height:20px;">
+                                    <img src=img/StarJPG.JPG style="height:20px;">
+                                    <img src=img/halfstar.JPG style="height:20px;">
+                                </div>
+                            </div>
+                            <div class="usercard45star">
+                                <h5>
+                                    <img src=img/user2.jpg style="height:20px;">Cakey</h5>
+                                <h6 style="margin-top:20px;">231 Listings</h6><h6>Electronics</h6>
+                                <div class="rating" style="margin-top:20px;">
+                                    <img src=img/StarJPG.JPG style="height:20px;">
+                                    <img src=img/StarJPG.JPG style="height:20px;">
+                                    <img src=img/StarJPG.JPG style="height:20px;">
+                                    <img src=img/StarJPG.JPG style="height:20px;">
+                                    <img src=img/halfstar.JPG style="height:20px;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="user-showcase">
+                            <div class="usercard45star">
+                                <h5>
+                                    <img src=img/user2.jpg style="height:20px;">kokococo</h5>
+                                <h6 style="margin-top:20px;">23 Listings</h6><h6>Electronics, Music</h6>
+                                <div class="rating" style="margin-top:20px;">
+                                    <img src=img/StarJPG.JPG style="height:20px;">
+                                    <img src=img/StarJPG.JPG style="height:20px;">
+                                    <img src=img/StarJPG.JPG style="height:20px;">
+                                    <img src=img/StarJPG.JPG style="height:20px;">
+                                    <img src=img/halfstar.JPG style="height:20px;">
+                                </div>
+                            </div>
+                            <div class="usercard4star">
+                                <h5>
+                                    <img src=img/user2.jpg style="height:20px;">tornado1212</h5>
+                                <h6 style="margin-top:20px;">20 Listings</h6><h6>Hats</h6>
+                                <div class="rating" style="margin-top:20px;">
+                                    <img src=img/StarJPG.JPG style="height:20px;">
+                                    <img src=img/StarJPG.JPG style="height:20px;">
+                                    <img src=img/StarJPG.JPG style="height:20px;">
+                                    <img src=img/StarJPG.JPG style="height:20px;">
+                                </div>
+                            </div>
+                            <div class="usercard4star">
+                                <h5>
+                                    <img src=img/user2.jpg style="height:20px;">888five</h5>
+                                <h6 style="margin-top:20px;">23 Listings</h6><h6>Fans</h6>
+                                <div class="rating" style="margin-top:20px;">
+                                    <img src=img/StarJPG.JPG style="height:20px;">
+                                    <img src=img/StarJPG.JPG style="height:20px;">
+                                    <img src=img/StarJPG.JPG style="height:20px;">
+                                    <img src=img/StarJPG.JPG style="height:20px;">
+                                </div>
+                            </div>
+                            <div class="usercard4star">
+                                <h5>
+                                    <img src=img/user2.jpg style="height:20px;">1212akhdae</h5>
+                                <h6 style="margin-top:20px;">122 Listings</h6><h6>Coupons</h6>
+                                <div class="rating" style="margin-top:20px;">
+                                    <img src=img/StarJPG.JPG style="height:20px;">
+                                    <img src=img/StarJPG.JPG style="height:20px;">
+                                    <img src=img/StarJPG.JPG style="height:20px;">
+                                    <img src=img/StarJPG.JPG style="height:20px;">
+                                </div>
+                            </div>
+                            <div class="usercard4star">
+                                <h5>
+                                    <img src=img/user2.jpg style="height:20px;">aeiou</h5>
+                                <h6 style="margin-top:20px;">76 Listings</h6><h6>Phones, Watches</h6>
+                                <div class="rating" style="margin-top:20px;">
+                                    <img src=img/StarJPG.JPG style="height:20px;">
+                                    <img src=img/StarJPG.JPG style="height:20px;">
+                                    <img src=img/StarJPG.JPG style="height:20px;">
+                                    <img src=img/StarJPG.JPG style="height:20px;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselTrendingUsers" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselTrendingUsers" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <div id="carouselRecommended" class="carousel slide" data-wrap="false" data-interval="false" style="margin-top:20px">
+                <h3>Recommended</h3>
+                <div class="carousel-inner" style="border:3px solid black;">
+                    <div class="carousel-item active">
+                        <div class="item-showcase">
+                            <div class="itemcardfan">
+                                <div class="item-card-username"><h5><img src=img/user2.jpg style="height:20px;">EGRAraTi</h5></div>
+                                <img src=img/UsedFan.jpg style="width:100%; display: block; margin:auto;">
+                                <div class="item-card-description">
+                                    <p style="margin:0">Bike</p>
+                                    <p>$20 Used</p>
+                                </div>
+                            </div>
+                            <div class="itemcardbicycle">
+                                <div class="item-card-username"><h5><img src=img/user2.jpg style="height:20px;">orEDpoSEdi</h5></div>
+                                <img src=img/UsedBike.jpg style="width:100%; display: block; margin:auto;">
+                                <div class="item-card-description">
+                                    <p style="margin:0">Bike</p>
+                                    <p>$50 Used</p>
+                                </div>
+                            </div>
+                            <div class="itemcardps4">
+                                <div class="item-card-username"><h5><img src=img/user2.jpg style="height:20px;">AlentAB</h5></div>
+                                <img src=img/Usedps4.jpg style="width:100%; display: block; margin:auto;">
+                                <div class="item-card-description">
+                                    <p style="margin:0">ps4</p>
+                                    <p>$300 Used</p>
+                                </div>
+                            </div>
+                            <div class="itemcardcar">
+                                <div class="item-card-username"><h5><img src=img/user2.jpg style="height:20px;">cUlbeINKeM</h5></div>
+                                <img src=img/UsedCar.jpg style="width:100%; display: block; margin:auto;">
+                                <div class="item-card-description">
+                                    <p style="margin:0">Car</p>
+                                    <p>$10000 Used</p>
+                                </div> 
+                            </div>
+                            <div class="itemcardphone">
+                                <div class="item-card-username"><h5><img src=img/user2.jpg style="height:20px;">iREnTranautH</h5></div>
+                                <img src=img/UsedPhone.jpg style="width:100%; display: block; margin:auto;">
+                                <div class="item-card-description">
+                                    <p style="margin:0">Phone</p>
+                                    <p>$400 Used</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="item-showcase">
+                            <div class="itemcardbicycle">
+                                <div class="item-card-username"><h5><img src=img/user2.jpg style="height:20px;">orEDpoSEdi</h5></div>
+                                <img src=img/UsedBike.jpg style="width:100%; display: block; margin:auto;">
+                                <div class="item-card-description">
+                                    <p style="margin:0">Bike</p>
+                                    <p>$50 Used</p>
+                                </div>
+                            </div>
+                            <div class="itemcardcar">
+                                <div class="item-card-username"><h5><img src=img/user2.jpg style="height:20px;">cUlbeINKeM</h5></div>
+                                <img src=img/UsedCar.jpg style="width:100%; display: block; margin:auto;">
+                                <div class="item-card-description">
+                                    <p style="margin:0">Car</p>
+                                    <p>$10000 Used</p>
+                                </div> 
+                            </div>
+                            <div class="itemcardcups">
+                                <div class="item-card-username"><h5><img src=img/user2.jpg style="height:20px;">EniNalDEat</h5></div>
+                                <img src=img/UsedCups.jpg style="width:100%; display: block; margin:auto;">
+                                <div class="item-card-description">
+                                    <p style="margin:0">Cups</p>
+                                    <p>$5 Used</p>
+                                </div>
+                            </div>
+                            <div class="itemcardfan">
+                                <div class="item-card-username"><h5><img src=img/user2.jpg style="height:20px;">EGRAraTi</h5></div>
+                                <img src=img/UsedFan.jpg style="width:100%; display: block; margin:auto;">
+                                <div class="item-card-description">
+                                    <p style="margin:0">Bike</p>
+                                    <p>$20 Used</p>
+                                </div>
+                            </div>
+                            <div class="itemcardphone">
+                                <div class="item-card-username"><h5><img src=img/user2.jpg style="height:20px;">iREnTranautH</h5></div>
+                                <img src=img/UsedPhone.jpg style="width:100%; display: block; margin:auto;">
+                                <div class="item-card-description">
+                                    <p style="margin:0">Phone</p>
+                                    <p>$400 Used</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="item-showcase">
+                            <div class="itemcardcups">
+                                <div class="item-card-username"><h5><img src=img/user2.jpg style="height:20px;">Username</h5></div>
+                                <img src=img/UsedCups.jpg style="width:100%; display: block; margin:auto;">
+                                <div class="item-card-description">
+                                    <p style="margin:0">Cups</p>
+                                    <p>$5 Used</p>
+                                </div>
+                            </div>
+                            <div class="itemcardfan">
+                                <div class="item-card-username"><h5><img src=img/user2.jpg style="height:20px;">Username</h5></div>
+                                <img src=img/UsedFan.jpg style="width:100%; display: block; margin:auto;">
+                                <div class="item-card-description">
+                                    <p style="margin:0">Bike</p>
+                                    <p>$20 Used</p>
+                                </div>
+                            </div>
+                            <div class="itemcardbicycle">
+                                <div class="item-card-username"><h5><img src=img/user2.jpg style="height:20px;">orEDpoSEdi</h5></div>
+                                <img src=img/UsedBike.jpg style="width:100%; display: block; margin:auto;">
+                                <div class="item-card-description">
+                                    <p style="margin:0">Bike</p>
+                                    <p>$50 Used</p>
+                                </div>
+                            </div>
+                            <div class="itemcardcar">
+                                <div class="item-card-username"><h5><img src=img/user2.jpg style="height:20px;">EGRAraTi</h5></div>
+                                <img src=img/UsedCar.jpg style="width:100%; display: block; margin:auto;">
+                                <div class="item-card-description">
+                                    <p style="margin:0">Car</p>
+                                    <p>$10000 Used</p>
+                                </div> 
+                            </div>
+                            <div class="itemcardphone">
+                                <div class="item-card-username"><h5><img src=img/user2.jpg style="height:20px;">iREnTranautH</h5></div>
+                                <img src=img/UsedPhone.jpg style="width:100%; display: block; margin:auto;">
+                                <div class="item-card-description">
+                                    <p style="margin:0">Phone</p>
+                                    <p>$400 Used</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselRecommended" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselRecommended" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <!-- JavaScript placed at the end of the document so the pages load faster -->
+        <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>
