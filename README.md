@@ -1,1 +1,1 @@
-# frontEnd creation of carousell
+# Front-End Redesign of Carousell
